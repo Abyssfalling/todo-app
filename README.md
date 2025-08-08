@@ -1,12 +1,62 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个简洁美观的 React 任务清单应用，支持任务添加、编辑、删除、优先级设置，并自动本地持久化。
 
-Currently, two official plugins are available:
+## 功能特色
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 添加新任务
+- 编辑任务内容（双击任务名）
+- 删除任务
+- 勾选完成状态
+- 设置任务优先级（高/中/低，颜色区分）
+- 任务统计（总数、已完成数）
+- 数据自动保存至浏览器本地（localStorage）
+- 响应式卡片分区布局，界面简洁有呼吸感
 
-## Expanding the ESLint configuration
+## 使用方法
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **安装依赖**
+
+   ```bash
+   npm install
+   ```
+
+2. **启动开发服务器**
+
+   ```bash
+   npm run dev
+   ```
+
+3. **访问应用**
+
+   浏览器打开 [http://localhost:5173](http://localhost:5173)（默认端口，具体以终端输出为准）
+
+## 目录结构
+
+```
+todo-app/
+├── src/
+│   ├── App.jsx
+│   ├── TodoItem.jsx
+│   ├── App.css
+│   └── ...
+├── index.html
+├── package.json
+└── README.md
+```
+
+## 主要技术
+
+- React 18+
+- Vite
+- CSS（现代布局与卡片风格）
+
+## 说明
+
+- 所有任务数据仅存储在本地浏览器，不会上传服务器。
+- 优先级颜色：高（红）、中（黄）、低（蓝）。
+- 支持移动端和桌面端自适应。
+
+## 截图
+
+> 可自行添加应用截图
